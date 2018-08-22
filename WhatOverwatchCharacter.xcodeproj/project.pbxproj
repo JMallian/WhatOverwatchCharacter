@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4C4DEDBC212CDB3200C98E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDBB212CDB3200C98E88 /* AppDelegate.swift */; };
-		4C4DEDBE212CDB3200C98E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDBD212CDB3200C98E88 /* ViewController.swift */; };
+		4C4DEDBE212CDB3200C98E88 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDBD212CDB3200C98E88 /* HomeScreenViewController.swift */; };
 		4C4DEDC1212CDB3200C98E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4DEDBF212CDB3200C98E88 /* Main.storyboard */; };
 		4C4DEDC3212CDB3400C98E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4DEDC2212CDB3400C98E88 /* Assets.xcassets */; };
 		4C4DEDC6212CDB3400C98E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4DEDC4212CDB3400C98E88 /* LaunchScreen.storyboard */; };
 		4C4DEDD1212CDB3400C98E88 /* WhatOverwatchCharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDD0212CDB3400C98E88 /* WhatOverwatchCharacterTests.swift */; };
 		4C4DEDDC212CDB3400C98E88 /* WhatOverwatchCharacterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDDB212CDB3400C98E88 /* WhatOverwatchCharacterUITests.swift */; };
+		4C4DEDEA212CDCCD00C98E88 /* CharactersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDE9212CDCCD00C98E88 /* CharactersTableView.swift */; };
+		4C4DEDEC212CDD1500C98E88 /* CharactersTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DEDEB212CDD1500C98E88 /* CharactersTableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4C4DEDB8212CDB3200C98E88 /* WhatOverwatchCharacter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatOverwatchCharacter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4DEDBB212CDB3200C98E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C4DEDBD212CDB3200C98E88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C4DEDBD212CDB3200C98E88 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		4C4DEDC0212CDB3200C98E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C4DEDC2212CDB3400C98E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C4DEDC5212CDB3400C98E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		4C4DEDD7212CDB3400C98E88 /* WhatOverwatchCharacterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatOverwatchCharacterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4DEDDB212CDB3400C98E88 /* WhatOverwatchCharacterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatOverwatchCharacterUITests.swift; sourceTree = "<group>"; };
 		4C4DEDDD212CDB3400C98E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4DEDE9212CDCCD00C98E88 /* CharactersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableView.swift; sourceTree = "<group>"; };
+		4C4DEDEB212CDD1500C98E88 /* CharactersTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				4C4DEDBB212CDB3200C98E88 /* AppDelegate.swift */,
-				4C4DEDBD212CDB3200C98E88 /* ViewController.swift */,
+				4C4DEDBD212CDB3200C98E88 /* HomeScreenViewController.swift */,
 				4C4DEDBF212CDB3200C98E88 /* Main.storyboard */,
 				4C4DEDC2212CDB3400C98E88 /* Assets.xcassets */,
 				4C4DEDC4212CDB3400C98E88 /* LaunchScreen.storyboard */,
 				4C4DEDC7212CDB3400C98E88 /* Info.plist */,
+				4C4DEDE9212CDCCD00C98E88 /* CharactersTableView.swift */,
+				4C4DEDEB212CDD1500C98E88 /* CharactersTableViewDataSource.swift */,
 			);
 			path = WhatOverwatchCharacter;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4DEDBE212CDB3200C98E88 /* ViewController.swift in Sources */,
+				4C4DEDEC212CDD1500C98E88 /* CharactersTableViewDataSource.swift in Sources */,
+				4C4DEDBE212CDB3200C98E88 /* HomeScreenViewController.swift in Sources */,
+				4C4DEDEA212CDCCD00C98E88 /* CharactersTableView.swift in Sources */,
 				4C4DEDBC212CDB3200C98E88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
